@@ -1,0 +1,77 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "none",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter",
+    "editor.formatOnSave": true
+  },
+  "html.format.wrapLineLength": 80,
+  "files.insertFinalNewline": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+    //"source.fixAll.stylelint": true
+  },
+  "editor.formatOnSave": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "extensions.ignoreRecommendations": true,
+  "vue.codeActions.savingTimeLimit": 2000,
+
+  "eslint.nodePath": "./node_modules/eslint",
+  "eslint.options": {
+    "overrideConfigFile": "./.eslintrc.cjs", // or "./.eslintrc.cjs" or "./eslintrc.json"
+    "reportUnusedDisableDirectives": "error"
+  },
+  "eslint.lintTask.options": "-c ./.eslintrc.cjs",
+  "editor.formatOnType": true,
+  "diffEditor.codeLens": true,
+  "editor.formatOnPaste": true,
+  "workbench.tree.indent": 15,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#05ef3c"
+  },
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  "runItOn": {
+    "watchers": [
+      {
+        "match": "**/*.vue",
+        "cmd": "bun lintfix",
+        "silent": true
+      }
+    ]
+  }
+}

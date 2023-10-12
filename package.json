@@ -1,0 +1,43 @@
+{
+  "name": "invoice-app",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1-alpha",
+  "license": "MIT",
+  "description": "Invoice application for enterprise",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --host -p 5920",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "bun lint:js && bun lint:prettier",
+    "lintfix": "prettier --write --list-different . && bun lint:js --fix"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxt/types": "^2.17.1",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/google-fonts": "^3.0.2",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@types/node": "^20.8.2",
+    "@typescript-eslint/parser": "^6.7.4",
+    "bun-types": "^1.0.4-canary.20231003T140149",
+    "daisyui": "^3.8.3",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "nuxt": "^3.7.4",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.5",
+    "typescript": "^5.2.2",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "dexie": "^3.2.4"
+  }
+}
